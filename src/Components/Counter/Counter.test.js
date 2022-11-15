@@ -14,17 +14,17 @@ describe("Counter Test", () => {
         decreaseBtn = screen.getByText("Decrease");
         increaseBtn = screen.getByText("Increase")
 
-    })
+    });
 
     beforeAll(() => {
         console.log("İlk başta bir kere beforeAll Çalıştı");
-    })
+    });
     afterEach(() => {
         console.log("Her testten sonra bir kere afterEach çalıştı");
-    })
+    });
     afterAll(() => {
         console.log("En sonda bir kere afterAll Çalıştı");
-    })
+    });
 
     test("increase btn", () => {
         userEvent.click(increaseBtn);
